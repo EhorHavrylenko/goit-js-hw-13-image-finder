@@ -22,20 +22,13 @@ refs.loadMoreBtn.addEventListener('click', () => {
     
     apiService.fetchImages().then(hits => {
         updateImagesMarkup(hits);
-    });
 
-    window.scrollTo({
-        top: photocard.offsetHeight
-        });
-   
-    
+        window.scrollTo({
+            top: document.documentElement.offsetHeight
+          });
+    });  
 })
 
-// function scroll(){
-//     window.scrollTo({
-//         top: document.documentElement.offsetHeight
-//         });
-//  }
 
 
 
