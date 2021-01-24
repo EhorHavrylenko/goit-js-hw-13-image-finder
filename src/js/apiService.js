@@ -1,4 +1,4 @@
-import { defaults } from "autoprefixer";
+
 
 const baseURL = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=`;
 const apiKey = '19920161-2470b7440ca60025ed5778af0';

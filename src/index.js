@@ -14,7 +14,7 @@ refs.searchRef.addEventListener('input', debounce(function (event) {
     apiService.resetPage(); // при каждом новом запросе показываем результат поиска с 1-ой страницы
 
     apiService.fetchImages().then(hits => { // фу запроса на сервер, передаем ей что вводит в поиск юзер
-        updateImagesMarkup(hits);
+        updateImagesMarkup(hits);   
     }) 
 }, 500));
 
@@ -26,10 +26,9 @@ refs.loadMoreBtn.addEventListener('click', () => {
         window.scrollTo({
             top: document.documentElement.offsetHeight
           });
+
     });  
 })
-
-
 
 
 
