@@ -3,16 +3,6 @@
 const baseURL = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=`;
 const apiKey = '19920161-2470b7440ca60025ed5778af0';
 
-// const imageSearch = (searchQuery, page = 1) => {
-
-//   return fetch(`${baseURL}${searchQuery}&page=${page}&per_page=12&key=${apiKey}`)
-//       .then(response => response.json())
-//       .then(({hits})=> hits) // деструктурируем нужные нам объекты картинок
-//       .catch(error => console.log(error))
-// }
-
-// export default imageSearch;
-
 export default {
     searchQuery: '',
     page: 1,
@@ -35,6 +25,18 @@ export default {
     }
 }
 
+//
+//
+//
+//
+//
+// const imageSearch = (searchQuery, page = 1) => {
 
+//   return fetch(`${baseURL}${searchQuery}&page=${page}&per_page=12&key=${apiKey}`)
+//       .then(response => response.json())
+//       .then(({hits})=> hits) // деструктурируем нужные нам объекты картинок
+//       .catch(error => console.log(error))
+// }
 
+// export default imageSearch;
 

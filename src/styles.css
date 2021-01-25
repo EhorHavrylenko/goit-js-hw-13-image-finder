@@ -17,9 +17,9 @@ body {
 
 .small-photo {
   margin-bottom: 10px;
-  /* object-fit: cover; */
-  /* width: 640px;
-  height: 326px; */
+  object-fit: cover;
+  width: 640px;
+  height: 326px;
 }
 
 .big-img {
@@ -29,7 +29,6 @@ body {
 
 .stats {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .stats-item {
@@ -60,16 +59,14 @@ body {
 
 .gallery {
   padding-top: 40px;
-  width: 1690px;
+  max-width: 1690px;
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
 .photo-card {
   width: 640px;
-  /* display: inline-block; */
-  margin-left: 80px;
-  margin-right: 80px;
+  padding-top: 15px;
 }

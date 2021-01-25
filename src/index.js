@@ -22,14 +22,14 @@ refs.loadMoreBtn.addEventListener('click', () => {
     
     apiService.fetchImages().then(hits => {
         updateImagesMarkup(hits);
+        
+        const firstImgId = hits[0].id; // создаем переменую первого обекта из массива по айди
+        document.getElementById(firstImgId).scrollIntoView(); // скрол до элемента по айди
 
-        window.scrollTo({
-            top: document.documentElement.offsetHeight
-          });
-
+        // window.scrollTo({
+        //     top: document.documentElement.offsetHeight,
+        //     behavior: 'smooth'
+        //   });
     });  
 })
-
-
-
 
